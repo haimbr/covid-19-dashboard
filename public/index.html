@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>קורונה - לוח בקרה</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/icon.ico">
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="/charts/plugin.js"></script>
+</head>
+
+<body>
+    <div class="backdrop"></div>
+    <div class='disclaimer-container'>
+        <div class="disclaimer-header">
+            <img src="/images/DisclaimerLogo.svg" alt="disclaimer">
+            <h1>תנאי שימוש</h1>
+        </div>
+        <div class="list-container">
+            <ul>
+                <li>תמונת מצב זו מופקת על ידי משרד הבריאות, והאתר הינו אתר רשמי של משרד הבריאות.</li>
+                <li>תמונת המצב מעודכנת מדי יום חול, 3 פעמים ביום, בערך בשעות: 11:00, 19:30, ו- 23:00.</li>
+                <li>ייתכנו שינויים ועדכונים בנתונים, לאור מועדי ההרצה השונים, וגם כנגזרת מעדכונים שוטפים, תהליכי טיוב
+                    נתונים, והנחיות מקצועיות כמו גם הנחיות משפטיות.</li>
+                <li>מדובר בתשתית בהרצה, ועל כן המשרד מבקש את הבנת הציבור למקרי תקלות וטעויות אנוש העלולות להתרחש.</li>
+                <li>תמונת מצב זו הינה לשירות הציבור למטרות כלליות ולמתן מידע ראשוני בלבד. שימוש במידע זה מעבר לידיעה
+                    כללית – הינו בשיקול דעת ואחריות בלעדית של המשתמש.</li>
+                <li>מדינת ישראל ו/או משרד הבריאות לא יישאו באחריות לשגיאות במידע, או לנזק ישיר או עקיף שיגרם למשתמש
+                    מהשימוש במידע ו/או מתקלות טכניות העלולות לגרום לשיבוש בהעברת ועדכון הנתונים.</li>
+            </ul>
+        </div>
+        <div class="disclaimer-button-container">
+            <span id="disclaimer-button">לכניסה לתמונת מצב</span>
+        </div>
+
+    </div>
+    <div class="scroll-container">
+        <div class="scroll-container-inner">
+            <header id="main-header">
+                <span id="main-header-right-side">
+                    <span id="header-button-container">
+                        <span class="header-button-line"></span>
+                        <span class="header-button-line"></span>
+                        <span class="header-button-line"></span>
+                    </span>
+                    <img src="/images/logo.png">
+                </span>
+                <span id="main-header-left-side">
+                    <h1>נגיף הקורונה בישראל - תמונת מצב כללית</h1>
+                    <p>עדכון אחרון: 8 בנובמבר 2020 | 10:40</p>
+                </span>
+                <span id="accessibility">לתצוגה נגישה</span>
+
+            </header>
+
+
+
+
+            <div id="side-nav">
+                <svg width="24px" height="25px" viewBox="0 0 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g transform="translate(-1388.000000, -158.000000)" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M1398,171.5 L1398,182 L1389,182 L1389,171.5 L1398,171.5 Z M1411,174 L1411,182 L1402.5,182 L1402.5,174 L1411,174 Z M1411,159 L1411,169.5 L1402.5,169.5 L1402.5,159 L1411,159 Z M1398,159 L1398,167 L1389,167 L1389,159 L1398,159 Z"
+                                id="Combined-Shape"></path>
+                        </g>
+                    </g>
+                </svg>
+                <p id="side-nav-first-p">מצב כללי</p>
+                <p>אודות</p>
+                <p>תנאי שימוש</p>
+                <p>מדריך למשתמש</p>
+            </div>
+
+            <div id="main-data-container">
+                <div id="" class="data-elements-container side-nav-not-active">
+                    <div class="data-element">
+                        <p class="data-header">מאומתים חדשים</p>
+                        <span>אתמול<img src="/images/info-icon.svg" alt="info-icon" class="info-icon"></span>
+                        <div class="info-container">
+                            <p>
+                                סך הנדבקים בנגיף COVID-19 בישראל שאותרו משעה 00:00 עד השעה 23:59 של יום אתמול
+                                <br> <br> מאומת - כל מי שנבדק ומצא חיובי לנגיף COVID-19 בין אם הופיעו אצלו תסמינים ובין
+                                אם לא, בין אם הוא חולה, החלים או נפטר
+
+                            </p>
+                        </div>
+                        <div class="data-in-numbers-container">
+                        </div>
+                    </div>
+
+                    <div class="data-element">
+                        <p class="data-header">חולים פעילים</p>
+                        <img src="/images/info-icon.svg" alt="info-icon" class="info-icon">
+                        <div class="info-container">
+                            <p>
+                                חולה פעיל - כל מי שנבדק ונמצא חיובי לנגיף<br> 19 - COVID, ללא קשר להופעת תסמינים, שטרם
+                                הוגדר כמחלים ושלא נפטר
+                            </p>
+                        </div>
+                        <div class="data-in-numbers-container">
+                        </div>
+                    </div>
+
+                    <div class="data-element">
+                        <p class="data-header">חולים קשה</p>
+                        <img src="/images/info-icon.svg" alt="info-icon" class="info-icon">
+                        <div class="info-container">
+                            <p>
+                                חולים קשה סך החולים במצב קשה וקריטי כפי שהוגדרו ע"י מערכת הבריאות , המאושפזים בבתי
+                                החולים
+                            </p>
+                        </div>
+                        <div class="data-in-numbers-container">
+                        </div>
+                        <div class="active-cases-info">
+                            <div id="medical-condition-legend">
+                                <div id="critical-condition-info">
+                                    <div class="legend-circle"></div>
+                                </div>
+                                <div id="mediocre-condition-info">
+                                    <div class="legend-circle"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="data-element contains-chart">
+                        <p class="data-header">מונשמים</p>
+                        <div class="data-in-numbers-container">
+                        </div>
+                        <div class="chart-reference">
+                            <span><img src="/images/chart-icon.svg" alt="chart-icon" class="chart-icon"></span>
+                            <p>מגמת שינוי יומית</p>
+                        </div>
+
+                    </div>
+
+                    <div class="data-element contains-chart">
+                        <p class="data-header">נפטרים מצטבר</p>
+                        <div class="data-in-numbers-container">
+                            <h1 id="total-death"></h1>
+                        </div>
+                        <div class="chart-reference">
+                            <span><img src="/images/chart-icon.svg" alt="chart-icon" class="chart-icon"></span>
+                            <p>מגמת שינוי יומית</p>
+                        </div>
+                    </div>
+
+                    <div class="data-element contains-chart">
+                        <p class="data-header">אחוז בדיקות חיוביות אתמול</p>
+                        <div class="data-in-numbers-container">
+                        </div>
+                        <div class="chart-reference">
+                            <span><img src="/images/chart-icon.svg" alt="chart-icon" class="chart-icon"></span>
+                            <p>בדיקות יומיות</p>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-container-inner">
+                            <h3>מונשמים - שינוי יומי</h3>
+                            <div id="chart1"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="second-container">
+                    <div id="" class="Weekly-look-container side-nav-not-active">
+                        <h1>מדדי התפשטות בהסתכלות שבועית</h1>
+                        <div class="Weekly-look">
+
+                            <h3>מגמת שינוי במאומתים חדשים וקצב הכפלה</h3>
+                            <div class="chart2-container">
+                                <div id="chart2"></div>
+                            </div>
+                        </div>
+                        <div class="Weekly-look" id="Weekly-look-middle">
+                            <h3> מספר החולים קשה וקריטי</h3>
+                            <div class="chart3-container">
+                                <div id="chart3"></div>
+                            </div>
+                        </div>
+                        <div class="Weekly-look">
+                            <h3>מספר המאומתים החדשים <u>מחוץ</u> לאזורי ההתפשטות</h3>
+                            <div class="chart4-container">
+                                <div id="chart4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="epidemic-curve-container" class="side-nav-not-active">
+                        <div class="epidemic-curve">
+                            <div class="epidemic-curve-inner">
+                                <h2>עקומה אפידמית</h2>
+                                <div>
+                                    <span class="option-list-button">שבועיים אחרונים<img src="/images/list-arrow.svg"
+                                            alt="list-arrow-icon"></span>
+                                    <ul class="option-list">
+                                        <li>עד עכשיו</li>
+                                        <li>שבוע אחרון</li>
+                                        <li>שבועיים אחרונים</li>
+                                        <li>חודש אחרון</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="chart5-container">
+                                <div id="chart5"></div>
+                            </div>
+                        </div>
+                        <div id="" class="severe-patients">
+                            <div class="epidemic-curve-inner">
+                                <h2>חולים קשה ומונשמים</h2>
+                                <div>
+                                    <span class="option-list-button">חודש אחרון<img src="/images/list-arrow.svg"
+                                            alt="list-arrow-icon"></span>
+                                    <ul class="option-list">
+                                        <li>עד עכשיו</li>
+                                        <li>שבוע אחרון</li>
+                                        <li>שבועיים אחרונים</li>
+                                        <li>חודש אחרון</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="chart6-container">
+                                <div id="chart6"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="traffic-light-plan">
+                    <div class="table-container">
+                        <div class="cities-table-header">
+                            <h2>תכנית הרמזור</h2>
+                            <div class="cities-table-inner">
+                                <span>
+                                    <p class="cities-table-header-info">* מרכיבי ציון הרמזור (לפי נתוני השבוע האחרון)
+                                    </p>
+                                    <span class="update-date-container">
+                                        <span class="update-date"><img src="/images/info-icon.svg" alt="info-icon"
+                                                class="info-icon">
+                                            <p>הנתונים נכונים לתאריך<br> 30/12/2020 </p>
+                                        </span>
+                                        <span class="cities-search-container"><img src="/images/search-icon.svg"
+                                                alt="info-icon"><input type="text" id="cities-search"
+                                                placeholder="חיפוש ישוב">
+                                            <ul></ul>
+                                        </span>
+                                    </span>
+                                </span>
+
+                                <div class="cities-legend">
+                                    <div>
+                                        <span></span>
+                                        <div class="cities-legend-text">
+                                            <p>אדום - פעילות מינימלית</p>
+                                            <p>ציון 7.5 ומעלה</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span></span>
+                                        <div class="cities-legend-text">
+                                            <p>כתום - פעילות מצומצמת</p>
+                                            <p>ציון בין 6 ל - 7.5</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span></span>
+                                        <div class="cities-legend-text">
+                                            <p>צהוב - פעילות מוגבלת</p>
+                                            <p>ציון בין 4.5 ל - 6</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span></span>
+                                        <div class="cities-legend-text">
+                                            <p>ירוק - פעילות מורחבת</p>
+                                            <p>ציון עד 4.5</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="table-inner">
+                            <table class="cities-table">
+                                <thead>
+                                    <tr class="cities-headers">
+                                        <th>ישוב<img src="/images/sort-arrow.svg" class="cities-arrow" alt="arrow"></th>
+                                        <th>צבע החלטת<br>ממשלה<img src="/images/sort-arrow.svg" class="cities-arrow"
+                                                alt="arrow"></th>
+                                        <th>ציון וצבע יומי<img src="/images/sort-arrow.svg" class="cities-arrow"
+                                                alt="arrow"></th>
+                                        <th>חולים חדשים לכל<br> 10,000 נפש*<img src="/images/sort-arrow.svg"
+                                                class="cities-arrow" alt="arrow"></th>
+                                        <th>%הבדיקות<br>החיוביות *<img src="/images/sort-arrow.svg" class="cities-arrow"
+                                                alt="arrow"></th>
+                                        <th>שיעור שינוי<br>מאומתים *<img src="/images/sort-arrow.svg"
+                                                class="cities-arrow" alt="arrow"></th>
+                                        <th>חולים פעילים<img src="/images/sort-arrow.svg" class="cities-arrow"
+                                                alt="arrow"></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="hospital-status">
+                    <h3>סטטוס בתי חולים</h3>
+                    <div class="hospitals-table-inner">
+                        <table class="hospitals-table">
+                            <thead>
+                                <tr class="hospitals-headers">
+                                    <th>בית חולים<img src="/images/sort-arrow.svg" class="hospitals-arrow" alt="arrow">
+                                    </th>
+                                    <th>% תפוסה כללי<img src="/images/sort-arrow.svg" class="hospitals-arrow"
+                                            alt="arrow"></th>
+                                    <th>% תפוסת קורונה<img src="/images/sort-arrow.svg" class="hospitals-arrow"
+                                            alt="arrow"></th>
+                                    <th>אנשי צוות מאומתים<br>ובבידוד<img src="/images/sort-arrow.svg"
+                                            class="hospitals-arrow" alt="arrow"></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="js/index.js"></script>
+
+</body>
+
+
+
+
+
+</html>

@@ -1,0 +1,78 @@
+#accessibility{
+    background-color: #d8d8d8;
+}
+
+.scroll-container::-webkit-scrollbar-track { 
+    background-color: #151a30;
+} 
+
+.data-element,
+.chart-container-inner,
+.Weekly-look-container,
+#epidemic-curve-container div,
+.traffic-light-plan,
+.hospital-status{
+    background-color: #384f5f;
+    color: white;
+}
+
+body{
+    background-color:#49667a;
+}
+
+.hospitals-table-inner::-webkit-scrollbar-track,
+.table-inner::-webkit-scrollbar-track { 
+    background-color: #384f5f;
+} 
+
+
+#cities-search{
+    background-color: #384f5f;
+}
+
+.update-date{
+    background-color: #2a3b47;
+}
+
+.table-inner thead th{
+    background-color: #2a3b47;
+}
+
+.table-inner th:nth-child(4) {
+    background: #354047;
+}
+.table-inner th:nth-child(5) {
+    background: #354047;
+}
+.table-inner th:nth-child(6) {
+    background: #354047;
+}
+
+
+.table-inner td:nth-child(4) {
+    background:#314553;
+}
+.table-inner td:nth-child(5) {
+    background:#314553;
+}
+.table-inner td:nth-child(6) {
+    background:#314553;
+}
+
+.table-inner td:nth-child(3) span{
+    color: black;
+}
+
+.hospitals-table-inner thead th{
+    background:#2a3b47;
+}
+
+
+.cities-table-header ul{
+    background-color: rgb(56 79 95);
+}
+
+.option-list-button{
+    background-color:#384f5f;
+    border: 0.5px solid #79858e;
+}
