@@ -20,12 +20,6 @@ const darkMode = {
 
 
 
-
-// let lastWeekData = {}
-// let lastTwoWeeksData = {}
-// let allData = {}
-// let lastMonth = {}
-
 let allData = [];
 
 export function createChart6(container, data, datesRange, isDarkMode){

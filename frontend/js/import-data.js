@@ -1,12 +1,12 @@
 
-import { createChart1 } from '../../charts/index2.js';
-import { createChart2 } from '../../charts/index3.js';
-import { createChart3 } from '../../charts/index5.js';
-import { createChart4 } from '../../charts/index7.js';
-import { createChart5 } from '../../charts/index8.js';
-import { createChart6 } from '../../charts/index10.js';
-import { createCitiesTable } from '../../charts/cities-table.js';
-import { createHospitalsTable } from '../../charts/hospitals-table.js';
+import { createChart1 } from './charts/charts2.js';
+import { createChart2 } from './charts/charts3.js';
+import { createChart3 } from './charts/charts5.js';
+import { createChart4 } from './charts/charts7.js';
+import { createChart5 } from './charts/charts8.js';
+import { createChart6 } from './charts/charts10.js';
+import { createCitiesTable } from './charts/cities-table.js';
+import { createHospitalsTable } from './charts/hospitals-table.js';
 
 
 

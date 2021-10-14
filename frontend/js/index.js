@@ -1,5 +1,5 @@
 
-import './import-data/import-data.js';
+import './import-data.js';
 import './accessibility.js';
 
 

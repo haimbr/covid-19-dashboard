@@ -5,17 +5,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>קורונה - לוח בקרה</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" type="image/x-icon" href="/images/icon.ico">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/x-icon" href="./images/icon.ico">
+    <script type="module" src="./js/index.js" defer></script>
     <script src="https://code.highcharts.com/stock/highstock.js"></script>
-    <script src="/charts/plugin.js"></script>
+    <script src="./js/charts/plugin.js"></script>
 </head>
 
 <body>
     <div class="backdrop"></div>
     <div class='disclaimer-container'>
         <div class="disclaimer-header">
-            <img src="/images/DisclaimerLogo.svg" alt="disclaimer">
+            <img src="./images/DisclaimerLogo.svg" alt="disclaimer">
             <h1>תנאי שימוש</h1>
         </div>
         <div class="list-container">
@@ -45,7 +46,7 @@
                         <span class="header-button-line"></span>
                         <span class="header-button-line"></span>
                     </span>
-                    <img src="/images/logo.png">
+                    <img src="./images/logo.png">
                 </span>
                 <span id="main-header-left-side">
                     <h1>נגיף הקורונה בישראל - תמונת מצב כללית</h1>
@@ -79,7 +80,7 @@
                 <div id="" class="data-elements-container side-nav-not-active">
                     <div class="data-element">
                         <p class="data-header">מאומתים חדשים</p>
-                        <span>אתמול<img src="/images/info-icon.svg" alt="info-icon" class="info-icon"></span>
+                        <span>אתמול<img src="./images/info-icon.svg" alt="info-icon" class="info-icon"></span>
                         <div class="info-container">
                             <p>
                                 סך הנדבקים בנגיף COVID-19 בישראל שאותרו משעה 00:00 עד השעה 23:59 של יום אתמול
@@ -94,7 +95,7 @@
 
                     <div class="data-element">
                         <p class="data-header">חולים פעילים</p>
-                        <img src="/images/info-icon.svg" alt="info-icon" class="info-icon">
+                        <img src="./images/info-icon.svg" alt="info-icon" class="info-icon">
                         <div class="info-container">
                             <p>
                                 חולה פעיל - כל מי שנבדק ונמצא חיובי לנגיף<br> 19 - COVID, ללא קשר להופעת תסמינים, שטרם
@@ -107,7 +108,7 @@
 
                     <div class="data-element">
                         <p class="data-header">חולים קשה</p>
-                        <img src="/images/info-icon.svg" alt="info-icon" class="info-icon">
+                        <img src="./images/info-icon.svg" alt="info-icon" class="info-icon">
                         <div class="info-container">
                             <p>
                                 חולים קשה סך החולים במצב קשה וקריטי כפי שהוגדרו ע"י מערכת הבריאות , המאושפזים בבתי
@@ -135,7 +136,7 @@
                         <div class="data-in-numbers-container">
                         </div>
                         <div class="chart-reference">
-                            <span><img src="/images/chart-icon.svg" alt="chart-icon" class="chart-icon"></span>
+                            <span><img src="./images/chart-icon.svg" alt="chart-icon" class="chart-icon"></span>
                             <p>מגמת שינוי יומית</p>
                         </div>
 
@@ -147,7 +148,7 @@
                             <h1 id="total-death"></h1>
                         </div>
                         <div class="chart-reference">
-                            <span><img src="/images/chart-icon.svg" alt="chart-icon" class="chart-icon"></span>
+                            <span><img src="./images/chart-icon.svg" alt="chart-icon" class="chart-icon"></span>
                             <p>מגמת שינוי יומית</p>
                         </div>
                     </div>
@@ -157,7 +158,7 @@
                         <div class="data-in-numbers-container">
                         </div>
                         <div class="chart-reference">
-                            <span><img src="/images/chart-icon.svg" alt="chart-icon" class="chart-icon"></span>
+                            <span><img src="./images/chart-icon.svg" alt="chart-icon" class="chart-icon"></span>
                             <p>בדיקות יומיות</p>
                         </div>
                     </div>
@@ -199,7 +200,7 @@
                             <div class="epidemic-curve-inner">
                                 <h2>עקומה אפידמית</h2>
                                 <div>
-                                    <span class="option-list-button">שבועיים אחרונים<img src="/images/list-arrow.svg"
+                                    <span class="option-list-button">שבועיים אחרונים<img src="./images/list-arrow.svg"
                                             alt="list-arrow-icon"></span>
                                     <ul class="option-list">
                                         <li>עד עכשיו</li>
@@ -217,7 +218,7 @@
                             <div class="epidemic-curve-inner">
                                 <h2>חולים קשה ומונשמים</h2>
                                 <div>
-                                    <span class="option-list-button">חודש אחרון<img src="/images/list-arrow.svg"
+                                    <span class="option-list-button">חודש אחרון<img src="./images/list-arrow.svg"
                                             alt="list-arrow-icon"></span>
                                     <ul class="option-list">
                                         <li>עד עכשיו</li>
@@ -244,11 +245,11 @@
                                     <p class="cities-table-header-info">* מרכיבי ציון הרמזור (לפי נתוני השבוע האחרון)
                                     </p>
                                     <span class="update-date-container">
-                                        <span class="update-date"><img src="/images/info-icon.svg" alt="info-icon"
+                                        <span class="update-date"><img src="./images/info-icon.svg" alt="info-icon"
                                                 class="info-icon">
                                             <p>הנתונים נכונים לתאריך<br> 30/12/2020 </p>
                                         </span>
-                                        <span class="cities-search-container"><img src="/images/search-icon.svg"
+                                        <span class="cities-search-container"><img src="./images/search-icon.svg"
                                                 alt="info-icon"><input type="text" id="cities-search"
                                                 placeholder="חיפוש ישוב">
                                             <ul></ul>
@@ -294,18 +295,19 @@
                             <table class="cities-table">
                                 <thead>
                                     <tr class="cities-headers">
-                                        <th>ישוב<img src="/images/sort-arrow.svg" class="cities-arrow" alt="arrow"></th>
-                                        <th>צבע החלטת<br>ממשלה<img src="/images/sort-arrow.svg" class="cities-arrow"
+                                        <th>ישוב<img src="./images/sort-arrow.svg" class="cities-arrow" alt="arrow">
+                                        </th>
+                                        <th>צבע החלטת<br>ממשלה<img src="./images/sort-arrow.svg" class="cities-arrow"
                                                 alt="arrow"></th>
-                                        <th>ציון וצבע יומי<img src="/images/sort-arrow.svg" class="cities-arrow"
+                                        <th>ציון וצבע יומי<img src="./images/sort-arrow.svg" class="cities-arrow"
                                                 alt="arrow"></th>
-                                        <th>חולים חדשים לכל<br> 10,000 נפש*<img src="/images/sort-arrow.svg"
+                                        <th>חולים חדשים לכל<br> 10,000 נפש*<img src="./images/sort-arrow.svg"
                                                 class="cities-arrow" alt="arrow"></th>
-                                        <th>%הבדיקות<br>החיוביות *<img src="/images/sort-arrow.svg" class="cities-arrow"
-                                                alt="arrow"></th>
-                                        <th>שיעור שינוי<br>מאומתים *<img src="/images/sort-arrow.svg"
+                                        <th>%הבדיקות<br>החיוביות *<img src="./images/sort-arrow.svg"
                                                 class="cities-arrow" alt="arrow"></th>
-                                        <th>חולים פעילים<img src="/images/sort-arrow.svg" class="cities-arrow"
+                                        <th>שיעור שינוי<br>מאומתים *<img src="./images/sort-arrow.svg"
+                                                class="cities-arrow" alt="arrow"></th>
+                                        <th>חולים פעילים<img src="./images/sort-arrow.svg" class="cities-arrow"
                                                 alt="arrow"></th>
                                     </tr>
                                 </thead>
@@ -321,13 +323,13 @@
                         <table class="hospitals-table">
                             <thead>
                                 <tr class="hospitals-headers">
-                                    <th>בית חולים<img src="/images/sort-arrow.svg" class="hospitals-arrow" alt="arrow">
+                                    <th>בית חולים<img src="./images/sort-arrow.svg" class="hospitals-arrow" alt="arrow">
                                     </th>
-                                    <th>% תפוסה כללי<img src="/images/sort-arrow.svg" class="hospitals-arrow"
+                                    <th>% תפוסה כללי<img src="./images/sort-arrow.svg" class="hospitals-arrow"
                                             alt="arrow"></th>
-                                    <th>% תפוסת קורונה<img src="/images/sort-arrow.svg" class="hospitals-arrow"
+                                    <th>% תפוסת קורונה<img src="./images/sort-arrow.svg" class="hospitals-arrow"
                                             alt="arrow"></th>
-                                    <th>אנשי צוות מאומתים<br>ובבידוד<img src="/images/sort-arrow.svg"
+                                    <th>אנשי צוות מאומתים<br>ובבידוד<img src="./images/sort-arrow.svg"
                                             class="hospitals-arrow" alt="arrow"></th>
                                 </tr>
                             </thead>
@@ -336,9 +338,12 @@
                     </div>
                 </div>
             </div>
+
+
         </div>
+
+
     </div>
-    <script type="module" src="js/index.js"></script>
 
 </body>
 
